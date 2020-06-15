@@ -75,7 +75,7 @@
    * equals 3. This applies on the first layer of CNNs which has input
    * image with RGB format.
    */
-
+#undef ARM_MATH_DSP
 arm_status
 arm_convolve_HWC_q7_RGB(const q7_t * Im_in,
                         const uint16_t dim_im_in,
